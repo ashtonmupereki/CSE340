@@ -4,3 +4,123 @@
 *:after {
   box-sizing: border-box;
 }
+
+/* Header */
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.siteName {
+  font-size: 20px;
+}
+
+#tools {
+  font-size: 16px;
+}
+
+/* Navigation */
+nav {
+  background-color: lightgray;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Car Section */
+#car-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-details {
+  margin-bottom: 20px;
+}
+
+.car-details h1 {
+  font-size: 24px;
+  color: rgb(1, 149, 149);
+}
+
+.car-details p {
+  font-size: 16px;
+  color: rgb(8, 120, 120);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Features Section */
+#features-section {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section h2 {
+  font-size: 20px;
+}
+
+.left-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-section a li {
+  display: flex;
+  
+  margin-bottom: 10px;
+}
+
+
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section h2 {
+  font-size: 20px;
+}
+
+.right-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  /* Header */
+  #top-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Features Section */
+  #features-section {
+    flex-direction: column;
+  }
+}
