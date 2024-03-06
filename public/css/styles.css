@@ -82,12 +82,12 @@ img {
 .left-section li {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   margin-bottom: 20px;
 }
 
-.left-section img {
-  width: 200px;
+.left-section img  {
+  width: 80px;
   height: auto;
 }
 
