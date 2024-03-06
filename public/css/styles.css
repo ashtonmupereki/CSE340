@@ -66,49 +66,36 @@ img {
   height: auto;
 }
 
-/* Features Section */
 #features-section {
   display: flex;
-}
-
-.left-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.left-section h2 {
-  font-size: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-section ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.left-section a li {
   display: flex;
-  
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-
-
-.right-section {
-  flex: 1;
+.left-section li {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.right-section h2 {
-  font-size: 20px;
+.left-section img {
+  width: 200px;
+  height: auto;
 }
 
-.right-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.left-section a {
+  text-decoration: none;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Mobile View */
