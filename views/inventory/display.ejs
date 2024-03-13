@@ -1,0 +1,35 @@
+<!-- views/inventory/detail.ejs -->
+
+<% include ../partials/header %>
+
+<main>
+  <div class="container">
+    <h1><%= vehicle.inv_make %> <%= vehicle.inv_model %></h1>
+    
+    <div class="vehicle-details">
+      <div class="vehicle-image">
+        <img src="<%= vehicle.inv_image %>" alt="Image of <%= vehicle.inv_make %> <%= vehicle.inv_model %> on CSE Motors">
+      </div>
+      
+      <div class="vehicle-info">
+        <h2><%= vehicle.inv_make %> <%= vehicle.inv_model %></h2>
+        <p><strong>Year:</strong> <%= vehicle.inv_year %></p>
+        <p><strong>Price:</strong> $<%= new Intl.NumberFormat('en-US').format(vehicle.inv_price) %></p>
+        <p><strong>Mileage:</strong> <%= new Intl.NumberFormat('en-US').format(vehicle.inv_mileage) %> miles</p>
+        
+        <h3>Description</h3>
+        <p><%= vehicle.inv_description %></p>
+        
+        <h3>Additional Details</h3>
+        <ul>
+          <li><strong>Color:</strong> <%= vehicle.inv_color %></li>
+          <li><strong>Transmission:</strong> <%= vehicle.inv_transmission %></li>
+          <li><strong>Fuel Type:</strong> <%= vehicle.inv_fuel_type %></li>
+          <!-- Add more descriptive data fields as needed -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<% include ../partials/footer %>
