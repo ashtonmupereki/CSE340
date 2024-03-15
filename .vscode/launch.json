@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Open navigation.ejs",
+            "program": "c:\\Users\\admin\\Documents\\CSE340\\views\\partials\\navigation.ejs"
+        }
+    ]
+}
