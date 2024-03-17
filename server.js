@@ -31,6 +31,25 @@ app.get("/", function(req, res){
   res.render("index", {tittle: "Home"})
 })
 
+app.get('/views/custom.ejs', (req, res) => {
+  res.render('custom');
+});
+
+app.get('/views/sedan.ejs', (req, res) => {
+  res.render('sedan');
+});
+
+app.get('/views/sport.ejs', (req, res) => {
+  res.render('sport');
+});
+
+app.get('/views/suv.ejs', (req, res) => {
+  res.render('suv');
+});
+
+app.get('/views/truck.ejs', (req, res) => {
+  res.render('truck');
+});
 /* ***********************
  * Local Server Information
  * Values from .env (environment) file
